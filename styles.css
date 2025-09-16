@@ -78,3 +78,21 @@
     border-bottom: 1px dotted currentColor;
   }
   .whatsapp-link:hover { opacity: 0.85; }
+
+  .hero {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.hero__logo {
+  width: clamp(64px, 10vw, 120px);
+  height: auto;
+  display: block;
+  transform: translateY(6px);
+}
+
+@media (max-width: 560px) {
+  .hero { gap: 12px; }
+  .hero__logo { width: clamp(56px, 14vw, 96px); transform: translateY(4px); }
+}
